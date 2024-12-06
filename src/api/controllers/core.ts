@@ -206,10 +206,10 @@ export async function uploadFile(
  */
 export function checkResult(result: AxiosResponse) {
   if (!result.data) return null;
-  const { code, msg, data } = result.data;
-  if (!_.isFinite(code)) return result.data;
-  if (code === 0) return data;
-  throw new APIException(EX.API_REQUEST_FAILED, `[请求jimeng失败]: ${msg}`);
+  const { ret, errmsg, data } = result.data;
+  if (!_.isFinite(Number(ret))) return result.data;
+  if (ret === "0") return data;
+  throw new APIException(EX.API_REQUEST_FAILED, `[请求jimeng失败]: ${errmsg}`);
 }
 
 /**
