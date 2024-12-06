@@ -243,6 +243,8 @@ Authorization: Bearer [sessionid]
 
 ```json
 {
+  // jimeng-2.1（默认） / jimeng-2.0-pro / jimeng-2.0 / jimeng-1.4 / jimeng-xl-pro
+  "model": "jimeng-2.1",
   // 提示词，必填
   "prompt": "少女祈祷中...",
   // 反向提示词，默认空字符串
