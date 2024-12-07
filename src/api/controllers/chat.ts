@@ -112,6 +112,12 @@ export async function createCompletionStream(
 
     const stream = new PassThrough();
 
+    if (messages.length === 0) {
+      logger.warn("消息为空，返回空流");
+      stream.end("data: [DONE]\n\n");
+      return stream;
+    }
+
     stream.write(
       "data: " +
         JSON.stringify({
@@ -131,7 +137,7 @@ export async function createCompletionStream(
 
     generateImages(
       model,
-      messages.reduce((acc, message) => acc + message.content, ""),
+      messages[messages.length - 1].content,
       { width, height },
       refreshToken
     )

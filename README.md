@@ -5,14 +5,38 @@
 ![](https://img.shields.io/github/forks/llm-red-team/jimeng-free-api.svg)
 ![](https://img.shields.io/docker/pulls/vinlic/jimeng-free-api.svg)
 
-支持即梦超强图像生成能力（目前官方每日有 60 积分，可生成 60 次），零配置部署，多路 token 支持，自动清理会话痕迹。
+支持即梦超强图像生成能力（目前官方每日有 60 积分，可生成 60 次），零配置部署，多路 token 支持。
 
-与 ChatGPT 接口完全兼容。
+与 OpenAI 接口完全兼容。
+
+还有以下十个free-api欢迎关注：
+
+Moonshot AI（Kimi.ai）接口转API [kimi-free-api](https://github.com/LLM-Red-Team/kimi-free-api)
+
+阶跃星辰 (跃问StepChat) 接口转API [step-free-api](https://github.com/LLM-Red-Team/step-free-api)
+
+阿里通义 (Qwen) 接口转API [qwen-free-api](https://github.com/LLM-Red-Team/qwen-free-api)
+
+智谱AI (智谱清言) 接口转API [glm-free-api](https://github.com/LLM-Red-Team/glm-free-api)
+
+秘塔AI (Metaso) 接口转API [metaso-free-api](https://github.com/LLM-Red-Team/metaso-free-api)
+
+字节跳动（豆包）接口转API [doubao-free-api](https://github.com/LLM-Red-Team/doubao-free-api)
+
+讯飞星火（Spark）接口转API [spark-free-api](https://github.com/LLM-Red-Team/spark-free-api)
+
+MiniMax（海螺AI）接口转API [hailuo-free-api](https://github.com/LLM-Red-Team/hailuo-free-api)
+
+深度求索（DeepSeek）接口转API [deepseek-free-api](https://github.com/LLM-Red-Team/deepseek-free-api)
+
+聆心智能 (Emohaa) 接口转API [emohaa-free-api](https://github.com/LLM-Red-Team/emohaa-free-api)
+
 
 ## 目录
 
 - [免责声明](#免责声明)
 - [接入准备](#接入准备)
+  * [多账号接入](#多账号接入)
 - [Docker 部署](#Docker部署)
   - [Docker-compose 部署](#Docker-compose部署)
 - [Render 部署](#Render部署)
@@ -40,6 +64,14 @@
 从 [即梦](https://jimeng.jianying.com/) 获取 sessionid
 
 进入即梦登录账号，然后 F12 打开开发者工具，从 Application > Cookies 中找到`sessionid`的值，这将作为 Authorization 的 Bearer Token 值：`Authorization: Bearer sessionid`
+
+### 多账号接入
+
+你可以通过提供多个账号的sessionid并使用`,`拼接提供：
+
+`Authorization: Bearer sessionid1,sessionid2,sessionid3`
+
+每次请求服务会从中挑选一个。
 
 ## Docker 部署
 
