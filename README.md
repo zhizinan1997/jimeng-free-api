@@ -311,3 +311,7 @@ Authorization: Bearer [sessionid]
   ]
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=LLM-Red-Team/doubao-free-api&type=Date)](https://star-history.com/#LLM-Red-Team/doubao-free-api&Date)
