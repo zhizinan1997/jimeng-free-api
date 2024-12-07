@@ -5,7 +5,7 @@
 ![](https://img.shields.io/github/forks/llm-red-team/jimeng-free-api.svg)
 ![](https://img.shields.io/docker/pulls/vinlic/jimeng-free-api.svg)
 
-支持即梦超强图像生成能力（目前官方每日有 60 积分，可生成 60 次），零配置部署，多路 token 支持。
+支持即梦超强图像生成能力（目前官方每日赠送 66 积分，可生成 66 次），零配置部署，多路 token 支持。
 
 与 OpenAI 接口完全兼容。
 
@@ -37,6 +37,7 @@ MiniMax（海螺AI）接口转API [hailuo-free-api](https://github.com/LLM-Red-T
 - [免责声明](#免责声明)
 - [接入准备](#接入准备)
   * [多账号接入](#多账号接入)
+- [效果展示](#效果展示)
 - [Docker 部署](#Docker部署)
   - [Docker-compose 部署](#Docker-compose部署)
 - [Render 部署](#Render部署)
@@ -65,6 +66,8 @@ MiniMax（海螺AI）接口转API [hailuo-free-api](https://github.com/LLM-Red-T
 
 进入即梦登录账号，然后 F12 打开开发者工具，从 Application > Cookies 中找到`sessionid`的值，这将作为 Authorization 的 Bearer Token 值：`Authorization: Bearer sessionid`
 
+![example0](./doc/example-0.png)
+
 ### 多账号接入
 
 你可以通过提供多个账号的sessionid并使用`,`拼接提供：
@@ -72,6 +75,14 @@ MiniMax（海螺AI）接口转API [hailuo-free-api](https://github.com/LLM-Red-T
 `Authorization: Bearer sessionid1,sessionid2,sessionid3`
 
 每次请求服务会从中挑选一个。
+
+## 效果展示
+
+```text
+可爱的熊猫漫画，熊猫看到地上有一个叫“即梦”的时间机器，然后说了一句“我借用一下没事吧”
+```
+
+![example1](./doc/example-1.png)
 
 ## Docker 部署
 
