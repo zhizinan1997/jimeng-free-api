@@ -237,7 +237,11 @@ export async function generateImages(
     else
       throw new APIException(EX.API_IMAGE_GENERATION_FAILED);
   }
-  return item_list.map((item) => item.common_attr.cover_url);
+  return item_list.map((item) => {
+    if(!item?.image?.large_images?.[0]?.image_url)
+      return item?.common_attr?.cover_url || null;
+    return item.image.large_images[0].image_url;
+  });
 }
 
 export default {
