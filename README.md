@@ -82,7 +82,7 @@ MiniMax（海螺AI）接口转API [hailuo-free-api](https://github.com/LLM-Red-T
 可爱的熊猫漫画，熊猫看到地上有一个叫“即梦”的时间机器，然后说了一句“我借用一下没事吧”
 ```
 
-![example1](./doc/example-1.png)
+![example1](./doc/example-1.jpeg)
 
 ## Docker 部署
 
