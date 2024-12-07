@@ -9,34 +9,33 @@
 
 与 OpenAI 接口完全兼容。
 
-还有以下十个free-api欢迎关注：
+还有以下十个 free-api 欢迎关注：
 
-Moonshot AI（Kimi.ai）接口转API [kimi-free-api](https://github.com/LLM-Red-Team/kimi-free-api)
+Moonshot AI（Kimi.ai）接口转 API [kimi-free-api](https://github.com/LLM-Red-Team/kimi-free-api)
 
-阶跃星辰 (跃问StepChat) 接口转API [step-free-api](https://github.com/LLM-Red-Team/step-free-api)
+阶跃星辰 (跃问 StepChat) 接口转 API [step-free-api](https://github.com/LLM-Red-Team/step-free-api)
 
-阿里通义 (Qwen) 接口转API [qwen-free-api](https://github.com/LLM-Red-Team/qwen-free-api)
+阿里通义 (Qwen) 接口转 API [qwen-free-api](https://github.com/LLM-Red-Team/qwen-free-api)
 
-智谱AI (智谱清言) 接口转API [glm-free-api](https://github.com/LLM-Red-Team/glm-free-api)
+智谱 AI (智谱清言) 接口转 API [glm-free-api](https://github.com/LLM-Red-Team/glm-free-api)
 
-秘塔AI (Metaso) 接口转API [metaso-free-api](https://github.com/LLM-Red-Team/metaso-free-api)
+秘塔 AI (Metaso) 接口转 API [metaso-free-api](https://github.com/LLM-Red-Team/metaso-free-api)
 
-字节跳动（豆包）接口转API [doubao-free-api](https://github.com/LLM-Red-Team/doubao-free-api)
+字节跳动（豆包）接口转 API [doubao-free-api](https://github.com/LLM-Red-Team/doubao-free-api)
 
-讯飞星火（Spark）接口转API [spark-free-api](https://github.com/LLM-Red-Team/spark-free-api)
+讯飞星火（Spark）接口转 API [spark-free-api](https://github.com/LLM-Red-Team/spark-free-api)
 
-MiniMax（海螺AI）接口转API [hailuo-free-api](https://github.com/LLM-Red-Team/hailuo-free-api)
+MiniMax（海螺 AI）接口转 API [hailuo-free-api](https://github.com/LLM-Red-Team/hailuo-free-api)
 
-深度求索（DeepSeek）接口转API [deepseek-free-api](https://github.com/LLM-Red-Team/deepseek-free-api)
+深度求索（DeepSeek）接口转 API [deepseek-free-api](https://github.com/LLM-Red-Team/deepseek-free-api)
 
-聆心智能 (Emohaa) 接口转API [emohaa-free-api](https://github.com/LLM-Red-Team/emohaa-free-api)
-
+聆心智能 (Emohaa) 接口转 API [emohaa-free-api](https://github.com/LLM-Red-Team/emohaa-free-api)
 
 ## 目录
 
 - [免责声明](#免责声明)
 - [接入准备](#接入准备)
-  * [多账号接入](#多账号接入)
+  - [多账号接入](#多账号接入)
 - [效果展示](#效果展示)
 - [Docker 部署](#Docker部署)
   - [Docker-compose 部署](#Docker-compose部署)
@@ -70,7 +69,7 @@ MiniMax（海螺AI）接口转API [hailuo-free-api](https://github.com/LLM-Red-T
 
 ### 多账号接入
 
-你可以通过提供多个账号的sessionid并使用`,`拼接提供：
+你可以通过提供多个账号的 sessionid 并使用`,`拼接提供：
 
 `Authorization: Bearer sessionid1,sessionid2,sessionid3`
 
@@ -248,7 +247,7 @@ Authorization: Bearer [sessionid]
 
 ```json
 {
-  "id": "b88fe520-b40c-11ef-8c0b-cf7f4ccae1fb",
+  "id": "b400abe0-b4c3-11ef-b2eb-4175f5393bfd",
   "model": "jimeng-2.1",
   "object": "chat.completion",
   "choices": [
@@ -256,7 +255,7 @@ Authorization: Bearer [sessionid]
       "index": 0,
       "message": {
         "role": "assistant",
-        "content": "![image_0](https://p9-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/29bc1377c1354232a2747ddf443000b5~tplv-3jr8j4ixpe-aigc_resize:2048:2048.webp?lk3s=43402efa&x-expires=1735344000&x-signature=fDT67RrcwTWTeFA69HX7oHKdKTI%3D&format=.webp)\n![image_1](https://p3-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/5e51a41521824afbb280a3a188f65f13~tplv-3jr8j4ixpe-aigc_resize:2048:2048.webp?lk3s=43402efa&x-expires=1735344000&x-signature=oXxyNCPCUXf2SmEQqAH%2B1ecnMI8%3D&format=.webp)\n![image_2](https://p9-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/4580ce92e2574ab6b487134500ca92db~tplv-3jr8j4ixpe-aigc_resize:2048:2048.webp?lk3s=43402efa&x-expires=1735344000&x-signature=9GRYzJJeH0LUMprIFKni7PVuNoo%3D&format=.webp)\n![image_3](https://p6-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/0ce51429b38d49f289f5eecab516b243~tplv-3jr8j4ixpe-aigc_resize:2048:2048.webp?lk3s=43402efa&x-expires=1735344000&x-signature=hkqcRM%2B6PawaHxVIi0FuA0j3wSY%3D&format=.webp)\n"
+        "content": "![image_0](https://p6-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/3b381b78fe2f46aaac952753d6d7faa7~tplv-3jr8j4ixpe-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1735344000&x-signature=zcGIxn%2BBIxI%2BTYj2RU4BflvSox8%3D&format=.jpeg)\n![image_1](https://p6-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/370482573be7454381cb38cc650b5c5f~tplv-3jr8j4ixpe-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1735344000&x-signature=FqnNJruwTWxrhrRGwhQvGKtHOSE%3D&format=.jpeg)\n![image_2](https://p9-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/e1b0248c9b0e4fbea8a479c5677a1610~tplv-3jr8j4ixpe-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1735344000&x-signature=N7wjAj2JWdA5YE9B3Bld7COu5jk%3D&format=.jpeg)\n![image_3](https://p9-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/9da2e379ea8d4c2bb24dc30180223cf9~tplv-3jr8j4ixpe-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1735344000&x-signature=vhwI8xtHW%2FcQT%2BCAPue%2FCye12Hs%3D&format=.jpeg)\n"
       },
       "finish_reason": "stop"
     }
@@ -266,7 +265,7 @@ Authorization: Bearer [sessionid]
     "completion_tokens": 1,
     "total_tokens": 2
   },
-  "created": 1733515220
+  "created": 1733593810
 }
 ```
 
@@ -305,19 +304,19 @@ Authorization: Bearer [sessionid]
 
 ```json
 {
-  "created": 1733515457,
+  "created": 1733593745,
   "data": [
     {
-      "url": "https://p6-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/82e1c62b410c4d56b16ae81e4b758630~tplv-3jr8j4ixpe-aigc_resize:2048:2048.webp?lk3s=43402efa&x-expires=1735344000&x-signature=BGdScKQ8NLzMmsq%2FNJsAoeT7YKw%3D&format=.webp"
+      "url": "https://p9-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/61bceb3afeb54c1c80ffdd598ac2f72d~tplv-3jr8j4ixpe-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1735344000&x-signature=DUY6jlx4zAXRYJeATyjZ3O6F1Pw%3D&format=.jpeg"
     },
     {
-      "url": "https://p3-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/6d1fe992c76d4f5dac28b1fc6f26eca0~tplv-3jr8j4ixpe-aigc_resize:2048:2048.webp?lk3s=43402efa&x-expires=1735344000&x-signature=acKpfgKU353NOpcQZ%2F%2Bt6ZOAU24%3D&format=.webp"
+      "url": "https://p3-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/e37ab3cd95854cd7b37fb697ea2cb4da~tplv-3jr8j4ixpe-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1735344000&x-signature=oKtY400tjZeydKMyPZufjt0Qpjs%3D&format=.jpeg"
     },
     {
-      "url": "https://p3-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/ba251a7358f44945a28b33b89d4cd85d~tplv-3jr8j4ixpe-aigc_resize:2048:2048.webp?lk3s=43402efa&x-expires=1735344000&x-signature=Efa7AQoj4zd31RGZs2nmq%2FUgCp4%3D&format=.webp"
+      "url": "https://p9-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/13841ff1c30940cf931eccc22405656b~tplv-3jr8j4ixpe-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1735344000&x-signature=4UffSRMmOeYoC0u%2B5igl9S%2BfYKs%3D&format=.jpeg"
     },
     {
-      "url": "https://p6-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/1de2c37bc8734c32b1eb8c903b9c81f2~tplv-3jr8j4ixpe-aigc_resize:2048:2048.webp?lk3s=43402efa&x-expires=1735344000&x-signature=Tif2ZX0wYOhdrwjB0SXrSlu0EJc%3D&format=.webp"
+      "url": "https://p6-heycan-hgt-sign.byteimg.com/tos-cn-i-3jr8j4ixpe/731c350244b745d5990e8931b79b7fe7~tplv-3jr8j4ixpe-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1735344000&x-signature=ywYjZQeP3t2yyvx6Wlud%2BCB28nU%3D&format=.jpeg"
     }
   ]
 }
