@@ -33,19 +33,22 @@ MiniMax（海螺 AI）接口转 API [hailuo-free-api](https://github.com/LLM-Red
 
 ## 目录
 
-- [免责声明](#免责声明)
-- [接入准备](#接入准备)
-  - [多账号接入](#多账号接入)
-- [效果展示](#效果展示)
-- [Docker 部署](#Docker部署)
-  - [Docker-compose 部署](#Docker-compose部署)
-- [Render 部署](#Render部署)
-- [Vercel 部署](#Vercel部署)
-- [原生部署](#原生部署)
-- [推荐使用客户端](#推荐使用客户端)
-- [接口列表](#接口列表)
-  - [对话补全](#对话补全)
-  - [图像生成](#图像生成)
+- [Jimeng AI Free 服务](#jimeng-ai-free-服务)
+  - [目录](#目录)
+  - [免责声明](#免责声明)
+  - [接入准备](#接入准备)
+    - [多账号接入](#多账号接入)
+  - [效果展示](#效果展示)
+  - [Docker 部署](#docker-部署)
+    - [Docker-compose 部署](#docker-compose-部署)
+    - [Render 部署](#render-部署)
+    - [Vercel 部署](#vercel-部署)
+  - [原生部署](#原生部署)
+  - [推荐使用客户端](#推荐使用客户端)
+  - [接口列表](#接口列表)
+    - [对话补全](#对话补全)
+    - [图像生成](#图像生成)
+  - [Star History](#star-history)
 
 ## 免责声明
 
@@ -230,8 +233,8 @@ Authorization: Bearer [sessionid]
 
 ```json
 {
-  // jimeng-2.1（默认） / jimeng-2.0-pro / jimeng-2.0 / jimeng-1.4 / jimeng-xl-pro
-  "model": "jimeng-2.1",
+  // jimeng-3.0（默认） / jimeng-2.1 / jimeng-2.0-pro / jimeng-2.0 / jimeng-1.4 / jimeng-xl-pro
+  "model": "jimeng-3.0",
   "messages": [
     {
       "role": "user",
@@ -248,7 +251,7 @@ Authorization: Bearer [sessionid]
 ```json
 {
   "id": "b400abe0-b4c3-11ef-b2eb-4175f5393bfd",
-  "model": "jimeng-2.1",
+  "model": "jimeng-3.0",
   "object": "chat.completion",
   "choices": [
     {
@@ -285,8 +288,8 @@ Authorization: Bearer [sessionid]
 
 ```json
 {
-  // jimeng-2.1（默认） / jimeng-2.0-pro / jimeng-2.0 / jimeng-1.4 / jimeng-xl-pro
-  "model": "jimeng-2.1",
+  // jimeng-3.0（默认） /  jimeng-2.1 / jimeng-2.0-pro / jimeng-2.0 / jimeng-1.4 / jimeng-xl-pro
+  "model": "jimeng-3.0",
   // 提示词，必填
   "prompt": "少女祈祷中...",
   // 反向提示词，默认空字符串
