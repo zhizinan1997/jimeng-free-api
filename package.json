@@ -1,6 +1,6 @@
 {
   "name": "jimeng-free-api",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "jimeng Free API Server",
   "type": "module",
   "main": "dist/index.js",
